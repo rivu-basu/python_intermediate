@@ -1,0 +1,12 @@
+import calendar
+def lp_year(year):
+    year +=1 #To prevent current year to be printed as question says next 20 years
+    counter = 0
+    while counter < 20:
+        if calendar.isleap(year):
+            print('{} is a leap year!'.format(year))
+            counter += 1
+            print(counter)
+        year += 1
+yr=int(input("Enter current year: "))
+lp_year(yr)
